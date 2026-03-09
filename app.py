@@ -2,7 +2,7 @@ import streamlit as st
 import numpy as np
 import pandas as pd
 import joblib
-import tensorflow as tf
+import keras
 import plotly.graph_objects as go
 import plotly.express as px
 from plotly.subplots import make_subplots
@@ -166,7 +166,7 @@ def cargar_modelos():
     try:
         import os
         BASE = r'C:\Users\PC\OneDrive\Documentos\taller_ciencia_de_datos'
-        model   = tf.keras.models.load_model(os.path.join(BASE, 'modelo_credit_score.keras'))
+        model   = keras.models.load_model(os.path.join(BASE, 'modelo_credit_score.keras'))
         scaler  = joblib.load(os.path.join(BASE, 'scaler.pkl'))
         pca     = joblib.load(os.path.join(BASE, 'pca.pkl'))
         le      = joblib.load(os.path.join(BASE, 'label_encoder.pkl'))

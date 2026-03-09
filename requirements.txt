@@ -1,8 +1,9 @@
-streamlit==1.41.0
-plotly==5.24.1
-tensorflow==2.19.0
-scikit-learn==1.6.1
-joblib==1.4.2
-numpy==1.26.4
-pandas==2.2.3
-openpyxl==3.1.5
+streamlit
+plotly
+keras
+scikit-learn
+joblib
+numpy
+pandas
+openpyxl
+h5py
