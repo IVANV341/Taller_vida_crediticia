@@ -165,11 +165,11 @@ div[data-testid="metric-container"] {
 def cargar_modelos():
     try:
         import os
-        BASE = r'C:\Users\PC\OneDrive\Documentos\taller_ciencia_de_datos'
-        model   = keras.models.load_model(os.path.join(BASE, 'modelo_credit_score.keras'))
-        scaler  = joblib.load(os.path.join(BASE, 'scaler.pkl'))
-        pca     = joblib.load(os.path.join(BASE, 'pca.pkl'))
-        le      = joblib.load(os.path.join(BASE, 'label_encoder.pkl'))
+        BASE = os.path.dirname(os.path.abspath(__file__))
+        model  = tf.keras.models.load_model(os.path.join(BASE, 'modelo_credit_score.keras'))
+        scaler = joblib.load(os.path.join(BASE, 'scaler.pkl'))
+        pca    = joblib.load(os.path.join(BASE, 'pca.pkl'))
+        le     = joblib.load(os.path.join(BASE, 'label_encoder.pkl'))
         return model, scaler, pca, le, True
     except Exception as e:
         st.write(e)
