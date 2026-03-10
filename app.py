@@ -2,7 +2,8 @@ import streamlit as st
 import numpy as np
 import pandas as pd
 import joblib
-import keras
+import tensorflow as tf
+from tensorflow import keras
 import plotly.graph_objects as go
 import plotly.express as px
 from plotly.subplots import make_subplots
