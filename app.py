@@ -7,7 +7,6 @@ from tensorflow import keras
 import plotly.graph_objects as go
 import plotly.express as px
 from plotly.subplots import make_subplots
-
 # ── CONFIGURACIÓN DE PÁGINA ───────────────────────────────────
 st.set_page_config(
     page_title="Credit Score AI",
